@@ -1,4 +1,4 @@
-import LogoImg from "./../assets/react.svg";
+import LogoImg from "./../assets/header.logo.png";
 export default function Logo() {
   return (
     <h1>

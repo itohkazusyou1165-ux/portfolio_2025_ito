@@ -1,14 +1,7 @@
 export default function Navigation({ src }) {
   return (
-    <nav>
-      <ul
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          gap: 16,
-          listStyleType: "none",
-        }}
-      >
+    <nav class="nav-menu" id="js-nav">
+      <ul class="navi">
         {src.map((elem) => (
           <li className={elem.listClass} key={elem.key}>
             {elem.listName}
