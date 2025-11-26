@@ -13,7 +13,7 @@ export default function FirstView() {
         </div>
 
         <firure className="view-img">
-          <img src={Firstview} alt="ファーストビュー" />
+          <img src={Firstview} alt="ファーストビュー" style={{ width: 1000 }} />
         </firure>
       </section>
     </main>
