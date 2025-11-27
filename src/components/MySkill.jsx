@@ -38,7 +38,7 @@ export default function MySkill() {
         <br />
         <p>
           React ではコンポーネント分割や state / props を使った基本的な UI
-          の構築が可能です。 これまでに 0 からデザインした Web
+          の構築を勉強中です。 これまでに 0 からデザインした Web
           サイトの制作や、職業訓練校での個人・チーム制作
           にも取り組み、VSCode・Git・GitHub といった開発ツールを使用しながら、
           自走して学習と実装を続けています。

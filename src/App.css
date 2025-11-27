@@ -353,6 +353,17 @@ header {
   background: #fff;
 }
 
+/* src/styles/reveal.css */
+.reveal {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+.reveal.in {
+  opacity: 1;
+  transform: none;
+}
+
 .box__image img {
   width: 100%;
   height: 200px;
