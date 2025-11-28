@@ -26,7 +26,7 @@ function App() {
       <MyVision />
       <Footer />
 
-      {/* <h1>簡単なwebサイト制作</h1> */}
+    
     </>
   );
 }

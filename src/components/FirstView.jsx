@@ -12,9 +12,9 @@ export default function FirstView() {
           <p>コーダー志望の伊藤和輝のポートフォリオです。</p>
         </div>
 
-        <firure className="view-img">
+        <figure className="view-img">
           <img src={Firstview} alt="ファーストビュー" style={{ width: 1000 }} />
-        </firure>
+        </figure>
       </section>
     </main>
   );

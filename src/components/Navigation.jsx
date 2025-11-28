@@ -1,7 +1,7 @@
 export default function Navigation({ src }) {
   return (
-    <nav class="nav-menu" id="js-nav">
-      <ul class="navi">
+    <nav className="nav-menu" id="js-nav">
+      <ul className="navi">
         {src.map((elem) => (
           <li className={elem.listClass} key={elem.key}>
             {elem.listName}

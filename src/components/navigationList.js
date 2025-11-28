@@ -19,12 +19,12 @@ const navList = [
   {
     listName: "Works",
     listClass: "yellow",
-    key: 3,
+    key: 4,
   },
   {
     listName: "Contact",
     listClass: "black",
-    key: 3,
+    key: 5,
   },
 ];
 
