@@ -3,6 +3,7 @@ import workImage2 from "../assets/PokeAPI.png";
 import workImage3 from "../assets/Lp.png";
 const works = [
   {
+    
     title: "休み課題",
     text: "flexboxを使用、hamburgerメニュー導入",
     skill: "html/css",

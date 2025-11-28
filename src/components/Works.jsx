@@ -1,5 +1,20 @@
 import React from "react";
-import worksData from "./worksData"; //さっき作ったデータを読み込む
+
+import {Swiper,SwiperSlide}from"swiper/react";
+import { Pagination,Navigation } from "swiper/modules";
+
+// awiperのスタイル
+import "swiper/css"
+import "swiper/css/pagination"
+import "swiper/css/navigation"
+
+// データファイル
+import worksData from"./worksData";
+
+const swiperStyle={
+  paddingbottpm:"40px",
+  width:"100%",
+};
 
 export default function Works() {
   return (
@@ -9,10 +24,33 @@ export default function Works() {
         <p className="text">ー作品一覧</p>
       </div>
 
-      <div className="box-area">
+      <div style={{
+        width:"100%",
+        overflow:"hidden"
+      }}>
+        <Swiper
+        modules={[Pagination,Navigation]}
+        spaceBetween={30}
+        slidesPerView={1}
+        centeredSlides={true}
+        loop={true}
+        pagination={{clickable:true}}
+        navigation
+        breakpoints={{
+          768:{
+            slidesPerView:3,
+            centeredSlides:false
+          }
+        }}
+        style={swiperStyle}
+
+   >
+
+     
         {/* データを使って繰り返し表示（map）する形に修正 */}
         {worksData.map((item, index) => (
-          <div className="box" key={index}>
+          <SwiperSlide  key={index}>
+            <div className="box" style={{margin: "0 auto"}}>
             <figure className="box__image">
               <img src={item.imageUrl} alt={item.title} />
             </figure>
@@ -26,10 +64,12 @@ export default function Works() {
                 <p>
                   <a href="#">Site-Link</a>
                 </p>
+                </div>
               </div>
             </div>
-          </div>
+          </SwiperSlide>
         ))}
+        </Swiper>
       </div>
     </section>
   );
