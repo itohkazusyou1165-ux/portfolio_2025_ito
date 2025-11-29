@@ -19,7 +19,7 @@ html {
 
 body {
   background-color: #ffffff;
-  color: var(--base-font-color);
+
   font-family: "YuGothic", "Yu Gothic", sans-serif;
   margin: 0;
   line-height: 1.6;
@@ -138,6 +138,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+header img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
 }
 
 
@@ -514,7 +520,7 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-  /* ヘッダー */
+ 
   header {
     position: relative;
     flex-direction: column;
