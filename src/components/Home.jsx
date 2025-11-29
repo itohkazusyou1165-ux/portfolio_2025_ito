@@ -9,6 +9,7 @@ import Works from "./Works";
 import MyVision from "./MyVision";
 import Footer from "./Footer";
 import { useEffect, useState } from "react";
+import Aboutme from "./Aboutme";
 
 export default function Home() {
 
@@ -34,6 +35,9 @@ useEffect(()=>{
       
       <div className="watch">
         <Myprofile />
+      </div>
+      <div className="watch">
+        <Aboutme/>
       </div>
 
       <div className="watch">
