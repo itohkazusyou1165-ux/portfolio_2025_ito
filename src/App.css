@@ -579,21 +579,22 @@ footer {
   .nav-menu {
     position: fixed;
     top: 0;
-    right: -100%;
+    right: 0;
+    transform: translateX(100%);
     width: 80%;
     height: 100vh;
     background: rgba(255, 255, 255, 0.98);
-    transition: 0.4s;
+    transition: 0.4s ease;
     z-index: 150;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+   
   }
 
   /* メニューが開いた時 */
   .nav-menu.active {
-    right: 0;
+    transform: translateX(0);
   }
 
   .navi {
