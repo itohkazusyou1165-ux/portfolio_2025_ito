@@ -1,7 +1,7 @@
 import React from "react";
 
 import {Swiper,SwiperSlide}from"swiper/react";
-import { Pagination,Navigation } from "swiper/modules";
+import { Pagination,Navigation,Autoplay } from "swiper/modules";
 
 // swiperのスタイル
 import "swiper/css"
@@ -12,14 +12,14 @@ import "swiper/css/navigation"
 import worksData from"./worksData";
 
 const swiperStyle={
-  paddingbottpm:"40px",
+  paddingBottom:"40px",
   width:"100%",
 };
 
 export default function Works() {
   return (
     <section className="Works" id="wrapper">
-      <div className="works-top">
+      <div className="works-top" id="works">
         <h2 className="title">Works</h2>
         <p className="text">ー作品一覧</p>
       </div>
@@ -29,7 +29,11 @@ export default function Works() {
         overflow:"hidden"
       }}>
         <Swiper
-        modules={[Pagination,Navigation]}
+        modules={[Pagination,Navigation,Autoplay]}
+        autoplay={{
+          delay:3000,
+          disableOnInteraction:false,
+        }}
         spaceBetween={30}
         slidesPerView={1}
         centeredSlides={true}
@@ -62,7 +66,7 @@ export default function Works() {
               <div className="box-link">
                 <p className="box_txt">{item.skill}</p>
                 <p>
-                  <a href="#">Site-Link</a>
+                  <a href={item.url}target="_blank">Site-Link</a>
                 </p>
                 </div>
               </div>

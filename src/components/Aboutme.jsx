@@ -1,7 +1,7 @@
 export default function Aboutme({}) {
   return (
     <section className="career" id="wrapper">
-      <div className="career-top">
+      <div className="career-top" id="career">
         <h2 className="title">Career</h2>
         <p className="text">ー経歴ー</p>
       </div>

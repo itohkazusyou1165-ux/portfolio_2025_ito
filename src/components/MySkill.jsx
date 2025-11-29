@@ -6,7 +6,7 @@ import Figmalogo from "./../assets/figma-app-icon-free-vector.jpg";
 export default function MySkill() {
   return (
     <section className="Myskill" id="wrapper">
-      <div className="skill-top">
+      <div className="skill-top" id="skill">
         <h2 className="title">Web skill</h2>
         <p className="text">ーできることー</p>
       </div>

@@ -8,6 +8,7 @@ const works = [
     text: "flexboxを使用、hamburgerメニュー導入",
     skill: "html/css",
     imageUrl: workImage1,
+    url:"https://itohkazusyou1165-ux.github.io/summer_vacation_blog/"
   },
 
   {
@@ -15,6 +16,7 @@ const works = [
     text: "API取得おみくじランダム機能",
     skill: "html/css",
     imageUrl: workImage2,
+    url:"https://itohkazusyou1165-ux.github.io/poke_api/"
   },
 
   {
@@ -22,6 +24,7 @@ const works = [
     text: "JS機能搭載レスポンシブ対応",
     skill: "html/css",
     imageUrl: workImage3,
+    url:"https://itohkazusyou1165-ux.github.io/2025_10_17fictional_LP-3/"
   },
 ];
 

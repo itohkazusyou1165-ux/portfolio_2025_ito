@@ -1,12 +1,14 @@
 import { useState } from "react";
 import Logo from "./Logo";
 import navList from "./navigationList";
-export default function Header() {
 
+
+export default function Header() {
   const [open,setopen]=useState(false);
   const togglemenu=()=>{
     setopen(!open);
-  }
+  };
+
   return (
     <header className="header">
       <Logo/>
@@ -19,11 +21,12 @@ export default function Header() {
         <span></span>
       </button>
 
-      <nav className={open ?"nav-menu active":"nav-memu"} id="js-nav>">
+      <nav className={open ?"nav-menu active":"nav-menu"} id="js-nav">
         <ul className="navi">
           {navList.map((elem)=>(
           <li className={elem.listClass} key={elem.key}>
-            <a href="#">{elem.listName}</a>
+            <a href={elem.link} onClick={()=>setopen(false)}
+              >{elem.listName}</a>
           </li>
           ))}
         </ul>

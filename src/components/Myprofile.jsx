@@ -3,7 +3,7 @@ import ProfileImg from "./../assets/First-view.png";
 export default function Myprofile() {
   return (
     <section className="profile" id="wrapper">
-      <div className="profile-top">
+      <div className="profile-top" id="profile">
         <h2 className="title">Profile</h2>
         <p className="text">ー私についてー</p>
       </div>
