@@ -1,17 +1,5 @@
 @charset "UTF-8";
 
-:root {
-  --max-site-width: 1000px;
-  --base-font-color: #333;
-  --accent-color: rgb(233, 85, 68);
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 html {
   font-size: 100%;
   scroll-behavior: smooth;
@@ -19,7 +7,6 @@ html {
 
 body {
   background-color: #ffffff;
-
   font-family: "YuGothic", "Yu Gothic", sans-serif;
   margin: 0;
   line-height: 1.6;
@@ -140,12 +127,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-header img {
-  width: px;
-  height: auto;
-  object-fit: contain;
 }
 
 .navi {
@@ -431,19 +412,6 @@ header img {
 .box__body {
   padding: 15px;
   position: relative;
-}
-
-.bird_image {
-  position: absolute;
-  top: -30px;
-  left: 10px;
-  margin: 0;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  background: #fff;
-}
-.bird_image img {
-  border-radius: 50%;
 }
 
 .box__body h2 {
