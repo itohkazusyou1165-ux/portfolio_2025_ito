@@ -1,4 +1,4 @@
-import LogoImg from "./../assets/header.logo.png";
+import LogoImg from "./../assets/header.logo .png";
 export default function Logo() {
   return (
     <h1>
